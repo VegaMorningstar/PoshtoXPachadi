@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-text">Happy Anniversary</div>
+        <div class="loading-text">Loverrrr</div>
+        <canvas id="fireworksCanvas"></canvas>
+    </div>
+
+    <div class="profile-container" id="profile-container" style="display:none;">
+        <header class="profile-header">
+            <div class="profile-pic">
+                <img src="Images/profile-pic.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1 class="username">@poshto_x_pachadi</h1>
+                <div class="stats">
+                    <div><span>150</span> posts</div>
+                    <div><span>69</span> followers</div>
+                    <div><span>2</span> following</div>
+                </div>
+                <div class="bio">
+                    <p>Just two jubjubs navigating the world. #GoBigGoHome</p>
+                    <p>
+                        <a href="https://www.instagram.com/anoushka_not_anushka/" target="_blank" class="bio-link">@anoushka_not_anushka</a> 
+                        & 
+                        <a href="https://www.instagram.com/lil._.raj/" target="_blank" class="bio-link">@lil._.raj</a>
+                    </p>
+                </div>
+                
+                
+                <button class="edit-profile-btn">Add Photos</button>
+            </div>
+        </header>
+
+        <section class="profile-posts" id="profile-posts">
+            <!-- Images will be dynamically loaded here -->
+        </section>
+    </div>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <a id="downloadBtn" download>
+            <button class="download-btn">Save</button>
+        </a>
+        <button id="prevBtn" class="nav-btn prev">❮</button>
+        <button id="nextBtn" class="nav-btn next">❯</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
